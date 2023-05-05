@@ -11,7 +11,7 @@ from handlers.helpers import str_to_b64
 
 UPDATES_CHANNEL_USERNAME = ("UPDATES_CHANNEL_USERNAME", "Movies_X_Animes")
 DELETE_TIME = 30
-AUTODELETE_MESSAGE = os.getenv("from os import environ", '''‼️ File will auto delete in {DELETE_TIME} seconds😱 💡Forward it to saved massages or anywhere before downloading.😁 😇Join @{UPDATES_CHANNEL_USERNAME}''')
+AUTODELETE_MESSAGE = os.getenv("from os import environ", '''‼️ File will auto delete in "{DELETE_TIME}" seconds😱 💡Forward it to saved massages or anywhere before downloading.😁 😇Join @"{UPDATES_CHANNEL_USERNAME}" ''')
 
 async def reply_forward(message: Message, file_id: int):
     try:
