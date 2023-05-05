@@ -37,6 +37,6 @@ Send Me any Media or File.I can Work In Channel too Add Me to Channel with Edit 
 ├🔸🔔 **Bot Updates:** [𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/MxA_Bots)
 │
 ╰────[ **😇 @MxA_Bots 😇**]────⍟"""
-	ABOUT_DEV_TEXT = 
+	ABOUT_DEV_TEXT = f
 	
 	
