@@ -74,16 +74,16 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("😇 Join Channel 😇", url="https://t.me/movies_X_animes")
+                        InlineKeyboardButton("🍷 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🍷", url="https://t.me/LuffyMovies")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
+                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs"),
+                        InlineKeyboardButton("𝐂𝐥𝐨𝐬𝐞 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Movies Channel", url="https://t.me/movies_X_animes"),
-                        InlineKeyboardButton("Movies Group", url="https://t.me/Movie_Requestt_Group")
+                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/LuffyMovies"),
+                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Request_Movies_Webseries")
                     ]
                 ]
             )
@@ -124,7 +124,7 @@ async def main(bot: Client, message: Message):
                 return
 
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/TeleRoid14)",
+            await message.reply_text("Sorry, You are banned!\n\nContact here [Support](https://t.me/mrpremium_bot)",
                                      disable_web_page_preview=True)
             return
 
@@ -354,16 +354,16 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("😇 Join Channel 😇", url="https://t.me/movies_X_animes")
+                        InlineKeyboardButton("🍷 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🍷", url="https://t.me/LuffyMovies")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs"),
-                        InlineKeyboardButton("Close 🚪", callback_data="closeMessage")
+                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs"),
+                        InlineKeyboardButton("𝐂𝐥𝐨𝐬𝐞 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("Movies Channel", url="https://t.me/movies_X_animes"),
-                        InlineKeyboardButton("Movies Group", url="https://t.me/Movie_Requestt_Group")
+                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/LuffyMovies"),
+                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Request_Movies_Webseries")
                     ]
                 ]
             )
@@ -379,7 +379,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                        text="Sorry Sir, You are Banned to use me. Contact here [Support](https://t.me/mrpremium_bot).",
                         disable_web_page_preview=True
                     )
                     return
@@ -390,10 +390,10 @@ async def button(bot: Client, cmd: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("😇 Join Channel 😇", url=invite_link.invite_link)
+                                InlineKeyboardButton("😇 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 😇", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshmeh")
+                                InlineKeyboardButton("🔄 𝐑𝐞𝐟𝐫𝐞𝐬𝐡 🔄", callback_data="refreshmeh")
                             ]
                         ]
                     )
@@ -401,7 +401,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support](https://t.me/iSmartBoiUjjwal_ib_bot).",
+                    text="Something went Wrong. Contact my [Support](https://t.me/mrpremium_bot).",
                     disable_web_page_preview=True
                 )
                 return
@@ -411,12 +411,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Movies Channel", url="https://t.me/movies_X_animes"),
-                        InlineKeyboardButton("Movies Group", url="https://t.me/Movie_Requestt_Group")
+                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/LuffyMovies"),
+                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Request_Movies_Webseries")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs")
                     ]
                 ]
             )
