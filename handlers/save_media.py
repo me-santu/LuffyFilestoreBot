@@ -54,9 +54,9 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             f"**Batch Files Stored in my Database!**\n\nHere is the Permanent Link of your files: {share_link} \n\n"
             f"Just Click the link to get your files!",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton(" Movies Channel", url="https://t.me/movies_X_animes"),
-                  InlineKeyboardButton("Movies Group", url="https://t.me/Movie_Requestt_Group")]]
+                [[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)],
+                 [InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/LuffyMovies"),
+                  InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Request_Movies_Webseries")]]
             ),
             disable_web_page_preview=True
         )
@@ -64,7 +64,7 @@ async def save_batch_media_in_channel(bot: Client, editable: Message, message_id
             chat_id=int(Config.LOG_CHANNEL),
             text=f"#BATCH_SAVE:\n\n[{editable.reply_to_message.from_user.first_name}](tg://user?id={editable.reply_to_message.from_user.id}) Got Batch Link!",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Open Link", url=share_link)]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)]])
         )
     except Exception as err:
         await editable.edit(f"Something Went Wrong!\n\n**Error:** `{err}`")
@@ -93,9 +93,9 @@ async def save_media_in_channel(bot: Client, editable: Message, message: Message
             f"Here is the Permanent Link of your file: {share_link} \n\n"
             "Just Click the link to get your file!",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Open Link", url=share_link)],
-                 [InlineKeyboardButton("Movies Channel", url="https://t.me/movies_X_animes"),
-                  InlineKeyboardButton("Movies Group", url="https://t.me/Movie_Requestt_Group")]]
+                [[InlineKeyboardButton("𝐎𝐩𝐞𝐧 𝐋𝐢𝐧𝐤", url=share_link)],
+                 [InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/LuffyMovies"),
+                  InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Request_Movies_Webseries")]]
             ),
             disable_web_page_preview=True
         )
