@@ -10,8 +10,8 @@ from pyrogram.errors import FloodWait
 from handlers.helpers import str_to_b64
 
 UPDATES_CHANNEL_USERNAME = ("@LuffyMovies")
-DELETE_TIME = int(environ.get('DELETE_TIME', 120))#1min=60s , 2min=60×2=120 , 5min=60×5=300 😎🤏
-AUTODELETE_MESSAGE = os.getenv("from os import environ", f'''<b>‼️ File will auto delete in {DELETE_TIME} seconds😱\n💡Forward it to saved massages or anywhere before downloading.😁\n😇Join @{UPDATES_CHANNEL_USERNAME}</b>''')
+DELETE_TIME = int(environ.get('DELETE_TIME', 300))#1min=60s , 2min=60×2=120 , 5min=60×5=300 😎🤏
+AUTODELETE_MESSAGE = os.getenv("from os import environ", f'''<b>‼️ 𝙵𝚒𝚕𝚎 𝚠𝚒𝚕𝚕 𝚊𝚞𝚝𝚘 𝚍𝚎𝚕𝚎𝚝𝚎 𝚒𝚗 {DELETE_TIME} 𝚜𝚎𝚌𝚘𝚗𝚍𝚜😱\n💡𝙵𝚘𝚛𝚠𝚊𝚛𝚍 𝚒𝚝 𝚝𝚘 𝚜𝚊𝚟𝚎𝚍 𝚖𝚊𝚜𝚜𝚊𝚐𝚎𝚜 𝚘𝚛 𝚊𝚗𝚢𝚠𝚑𝚎𝚛𝚎 𝚋𝚎𝚏𝚘𝚛𝚎 𝚍𝚘𝚠𝚗𝚕𝚘𝚊𝚍𝚒𝚗𝚐.😁\n😇𝙹𝚘𝚒𝚗 @{UPDATES_CHANNEL_USERNAME}</b>''')
 
 async def reply_forward(message: Message, file_id: int):
     try:
