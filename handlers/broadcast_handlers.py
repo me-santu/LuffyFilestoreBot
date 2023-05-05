@@ -47,7 +47,7 @@ async def main_broadcast_handler(m, db):
         if not broadcast_ids.get(broadcast_id):
             break
     out = await m.reply_text(
-        text=f"Broadcast Started! You will be notified with log file when all the users are notified."
+        text=f"𝙱𝚛𝚘𝚊𝚍𝚌𝚊𝚜𝚝 𝚂𝚝𝚊𝚛𝚝𝚎𝚍! 𝚈𝚘𝚞 𝚠𝚒𝚕𝚕 𝚋𝚎 𝚗𝚘𝚝𝚒𝚏𝚒𝚎𝚍 𝚠𝚒𝚝𝚑 𝚕𝚘𝚐 𝚏𝚒𝚕𝚎 𝚠𝚑𝚎𝚗 𝚊𝚕𝚕 𝚝𝚑𝚎 𝚞𝚜𝚎𝚛𝚜 𝚊𝚛𝚎 𝚗𝚘𝚝𝚒𝚏𝚒𝚎𝚍."
     )
     start_time = time.time()
     total_users = await db.total_users_count()
