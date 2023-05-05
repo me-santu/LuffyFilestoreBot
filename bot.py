@@ -74,16 +74,16 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🍷 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🍷", url="https://t.me/LuffyMovies")
+                        InlineKeyboardButton("🍷 𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🍷", url="https://t.me/LuffyMovies")
                     ],
                     [
-                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
-                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs"),
-                        InlineKeyboardButton("𝐂𝐥𝐨𝐬𝐞 🚪", callback_data="closeMessage")
+                        InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙱𝚘𝚝", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙳𝚎𝚟", callback_data="aboutdevs"),
+                        InlineKeyboardButton("𝙲𝚕𝚘𝚜𝚎 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/LuffyMovies"),
-                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Request_Movies_Webseries")
+                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url="https://t.me/LuffyMovies"),
+                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙶𝚛𝚘𝚞𝚙", url="https://t.me/Request_Movies_Webseries")
                     ]
                 ]
             )
@@ -198,11 +198,11 @@ async def ban(c: Client, m: Message):
     
     if len(m.command) == 1:
         await m.reply_text(
-            f"Use this command to ban any user from the bot.\n\n"
+            f"𝚄𝚜𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚝𝚘 𝚋𝚊𝚗 𝚊𝚗𝚢 𝚞𝚜𝚎𝚛 𝚏𝚛𝚘𝚖 𝚝𝚑𝚎 𝚋𝚘𝚝.\n\n"
             f"Usage:\n\n"
             f"`/ban_user user_id ban_duration ban_reason`\n\n"
             f"Eg: `/ban_user 1234567 28 You misused me.`\n"
-            f"This will ban user with id `1234567` for `28` days for the reason `You misused me`.",
+            f"𝚃𝚑𝚒𝚜 𝚠𝚒𝚕𝚕 𝚋𝚊𝚗 𝚞𝚜𝚎𝚛 𝚠𝚒𝚝𝚑 𝚒𝚍 `1234567` 𝚏𝚘𝚛 `28` 𝚍𝚊𝚢𝚜 𝚏𝚘𝚛 𝚝𝚑𝚎 𝚛𝚎𝚊𝚜𝚘𝚗 `You misused me`.",
             quote=True
         )
         return
@@ -211,17 +211,17 @@ async def ban(c: Client, m: Message):
         user_id = int(m.command[1])
         ban_duration = int(m.command[2])
         ban_reason = ' '.join(m.command[3:])
-        ban_log_text = f"Banning user {user_id} for {ban_duration} days for the reason {ban_reason}."
+        ban_log_text = f"𝙱𝚊𝚗𝚗𝚒𝚗𝚐 𝚞𝚜𝚎𝚛 {user_id} 𝚏𝚘𝚛 {ban_duration} 𝚍𝚊𝚢𝚜 𝚏𝚘𝚛 𝚝𝚑𝚎 𝚛𝚎𝚊𝚜𝚘𝚗 {ban_reason}."
         try:
             await c.send_message(
                 user_id,
-                f"You are banned to use this bot for **{ban_duration}** day(s) for the reason __{ban_reason}__ \n\n"
-                f"**Message from the admin**"
+                f"𝚈𝚘𝚞 𝚊𝚛𝚎 𝚋𝚊𝚗𝚗𝚎𝚍 𝚝𝚘 𝚞𝚜𝚎 𝚝𝚑𝚒𝚜 𝚋𝚘𝚝 𝚏𝚘𝚛 **{ban_duration}** 𝚍𝚊𝚢(𝚜) 𝚏𝚘𝚛 𝚝𝚑𝚎 𝚛𝚎𝚊𝚜𝚘𝚗 __{ban_reason}__ \n\n"
+                f"**𝙼𝚎𝚜𝚜𝚊𝚐𝚎 𝚏𝚛𝚘𝚖 𝚝𝚑𝚎 𝚊𝚍𝚖𝚒𝚗**"
             )
-            ban_log_text += '\n\nUser notified successfully!'
+            ban_log_text += '\n\n𝚄𝚜𝚎𝚛 𝚗𝚘𝚝𝚒𝚏𝚒𝚎𝚍 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢!'
         except:
             traceback.print_exc()
-            ban_log_text += f"\n\nUser notification failed! \n\n`{traceback.format_exc()}`"
+            ban_log_text += f"\n\n𝚄𝚜𝚎𝚛 𝚗𝚘𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚒𝚘𝚗 𝚏𝚊𝚒𝚕𝚎𝚍! \n\n`{traceback.format_exc()}`"
 
         await db.ban_user(user_id, ban_duration, ban_reason)
         print(ban_log_text)
@@ -232,7 +232,7 @@ async def ban(c: Client, m: Message):
     except:
         traceback.print_exc()
         await m.reply_text(
-            f"Error occoured! Traceback given below\n\n`{traceback.format_exc()}`",
+            f"𝙴𝚛𝚛𝚘𝚛 𝚘𝚌𝚌𝚞𝚛𝚛𝚎𝚍! 𝚃𝚛𝚊𝚌𝚎𝚋𝚊𝚌𝚔 𝚐𝚒𝚟𝚎𝚗 𝚋𝚎𝚕𝚘𝚠\n\n`{traceback.format_exc()}`",
             quote=True
         )
 
@@ -242,26 +242,26 @@ async def unban(c: Client, m: Message):
 
     if len(m.command) == 1:
         await m.reply_text(
-            f"Use this command to unban any user.\n\n"
-            f"Usage:\n\n`/unban_user user_id`\n\n"
-            f"Eg: `/unban_user 1234567`\n"
-            f"This will unban user with id `1234567`.",
+            f"𝚄𝚜𝚎 𝚝𝚑𝚒𝚜 𝚌𝚘𝚖𝚖𝚊𝚗𝚍 𝚝𝚘 𝚞𝚗𝚋𝚊𝚗 𝚊𝚗𝚢 𝚞𝚜𝚎𝚛.\n\n"
+            f"𝚄𝚜𝚊𝚐𝚎:\n\n`/unban_user user_id`\n\n"
+            f"𝙴𝚐: `/unban_user 1234567`\n"
+            f"𝚃𝚑𝚒𝚜 𝚠𝚒𝚕𝚕 𝚞𝚗𝚋𝚊𝚗 𝚞𝚜𝚎𝚛 𝚠𝚒𝚝𝚑 𝚒𝚍 `1234567`.",
             quote=True
         )
         return
 
     try:
         user_id = int(m.command[1])
-        unban_log_text = f"Unbanning user {user_id}"
+        unban_log_text = f"𝚄𝚗𝚋𝚊𝚗𝚗𝚒𝚗𝚐 𝚞𝚜𝚎𝚛 {user_id}"
         try:
             await c.send_message(
                 user_id,
-                f"Your ban was lifted!"
+                f"𝚈𝚘𝚞𝚛 𝚋𝚊𝚗 𝚠𝚊𝚜 𝚕𝚒𝚏𝚝𝚎𝚍!"
             )
-            unban_log_text += '\n\nUser notified successfully!'
+            unban_log_text += '\n\n𝚄𝚜𝚎𝚛 𝚗𝚘𝚝𝚒𝚏𝚒𝚎𝚍 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢!'
         except:
             traceback.print_exc()
-            unban_log_text += f"\n\nUser notification failed! \n\n`{traceback.format_exc()}`"
+            unban_log_text += f"\n\n𝚄𝚜𝚎𝚛 𝚗𝚘𝚝𝚒𝚏𝚒𝚌𝚊𝚝𝚒𝚘𝚗 𝚏𝚊𝚒𝚕𝚎𝚍! \n\n`{traceback.format_exc()}`"
         await db.remove_ban(user_id)
         print(unban_log_text)
         await m.reply_text(
@@ -271,7 +271,7 @@ async def unban(c: Client, m: Message):
     except:
         traceback.print_exc()
         await m.reply_text(
-            f"Error occurred! Traceback given below\n\n`{traceback.format_exc()}`",
+            f"𝙴𝚛𝚛𝚘𝚛 𝚘𝚌𝚌𝚞𝚛𝚛𝚎𝚍! 𝚃𝚛𝚊𝚌𝚎𝚋𝚊𝚌𝚔 𝚐𝚒𝚟𝚎𝚗 𝚋𝚎𝚕𝚘𝚠\n\n`{traceback.format_exc()}`",
             quote=True
         )
 
@@ -291,7 +291,7 @@ async def _banned_users(_, m: Message):
         banned_usr_count += 1
         text += f"> **user_id**: `{user_id}`, **Ban Duration**: `{ban_duration}`, " \
                 f"**Banned on**: `{banned_on}`, **Reason**: `{ban_reason}`\n\n"
-    reply_text = f"Total banned user(s): `{banned_usr_count}`\n\n{text}"
+    reply_text = f"𝚃𝚘𝚝𝚊𝚕 𝚋𝚊𝚗𝚗𝚎𝚍 𝚞𝚜𝚎𝚛(𝚜): `{banned_usr_count}`\n\n{text}"
     if len(reply_text) > 4096:
         with open('banned-users.txt', 'w') as f:
             f.write(reply_text)
@@ -304,7 +304,7 @@ async def _banned_users(_, m: Message):
 @Bot.on_message(filters.private & filters.command("clear_batch"))
 async def clear_user_batch(bot: Client, m: Message):
     MediaList[f"{str(m.from_user.id)}"] = []
-    await m.reply_text("Cleared your batch files successfully!")
+    await m.reply_text("𝙲𝚕𝚎𝚊𝚛𝚎𝚍 𝚢𝚘𝚞𝚛 𝚋𝚊𝚝𝚌𝚑 𝚏𝚒𝚕𝚎𝚜 𝚜𝚞𝚌𝚌𝚎𝚜𝚜𝚏𝚞𝚕𝚕𝚢!")
 
 
 @Bot.on_callback_query()
@@ -318,12 +318,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
+                        InlineKeyboardButton("𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎𝚜 𝚘𝚏 𝙱𝚘𝚝",
                                              url="https://te.legra.ph/file/42e9a66c3df08a9c1987a.mp4")
                     ],
                     [
-                        InlineKeyboardButton("Go Home", callback_data="gotohome"),
-                        InlineKeyboardButton("About Dev", callback_data="aboutdevs")
+                        InlineKeyboardButton("𝙶𝚘 𝙷𝚘𝚖𝚎", callback_data="gotohome"),
+                        InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙳𝚎𝚟", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -336,12 +336,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
+                        InlineKeyboardButton("𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎𝚜 𝚘𝚏 𝙱𝚘𝚝",
                                              url="https://te.legra.ph/file/42e9a66c3df08a9c1987a.mp4")
                     ],
                     [
-                        InlineKeyboardButton("About Bot", callback_data="aboutbot"),
-                        InlineKeyboardButton("Go Home", callback_data="gotohome")
+                        InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙱𝚘𝚝", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝙶𝚘 𝙷𝚘𝚖𝚎", callback_data="gotohome")
                     ]
                 ]
             )
@@ -354,16 +354,16 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🍷 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🍷", url="https://t.me/LuffyMovies")
+                        InlineKeyboardButton("🍷 𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🍷", url="https://t.me/LuffyMovies")
                     ],
                     [
-                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
-                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs"),
-                        InlineKeyboardButton("𝐂𝐥𝐨𝐬𝐞 🚪", callback_data="closeMessage")
+                        InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙱𝚘𝚝", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙳𝚎𝚟", callback_data="aboutdevs"),
+                        InlineKeyboardButton("𝙲𝚕𝚘𝚜𝚎 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/LuffyMovies"),
-                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Request_Movies_Webseries")
+                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url="https://t.me/LuffyMovies"),
+                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙶𝚛𝚘𝚞𝚙", url="https://t.me/Request_Movies_Webseries")
                     ]
                 ]
             )
@@ -379,21 +379,21 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(channel_chat_id, cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact here [Support](https://t.me/mrpremium_bot).",
+                        text="𝚂𝚘𝚛𝚛𝚢 𝚂𝚒𝚛, 𝚈𝚘𝚞 𝚊𝚛𝚎 𝙱𝚊𝚗𝚗𝚎𝚍 𝚝𝚘 𝚞𝚜𝚎 𝚖𝚎. 𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙷𝚎𝚛𝚎 👉 [𝚂𝚞𝚙𝚙𝚘𝚛𝚝](https://t.me/mrpremium_bot).",
                         disable_web_page_preview=True
                     )
                     return
             except UserNotParticipant:
                 invite_link = await get_invite_link(channel_chat_id)
                 await cmd.message.edit(
-                    text="**I like Your Smartness But Don't Be Oversmart! 😑**\n\n",
+                    text="**𝙸 𝚕𝚒𝚔𝚎 𝚈𝚘𝚞𝚛 𝚂𝚖𝚊𝚛𝚝𝚗𝚎𝚜𝚜 𝙱𝚞𝚝 𝙳𝚘𝚗'𝚝 𝙱𝚎 𝙾𝚟𝚎𝚛𝚜𝚖𝚊𝚛𝚝! 😑**\n\n",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("😇 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 😇", url=invite_link.invite_link)
+                                InlineKeyboardButton("😇 𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 😇", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 𝐑𝐞𝐟𝐫𝐞𝐬𝐡 🔄", callback_data="refreshmeh")
+                                InlineKeyboardButton("🔄 𝚁𝚎𝚏𝚛𝚎𝚜𝚑 🔄", callback_data="refreshmeh")
                             ]
                         ]
                     )
@@ -401,7 +401,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support](https://t.me/mrpremium_bot).",
+                    text="𝚂𝚘𝚖𝚎𝚝𝚑𝚒𝚗𝚐 𝚠𝚎𝚗𝚝 𝚆𝚛𝚘𝚗𝚐. 𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙷𝚎𝚛𝚎 👉 [𝚂𝚞𝚙𝚙𝚘𝚛𝚝](https://t.me/mrpremium_bot).",
                     disable_web_page_preview=True
                 )
                 return
@@ -411,12 +411,12 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/LuffyMovies"),
-                        InlineKeyboardButton("𝐌𝐨𝐯𝐢𝐞𝐬 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Request_Movies_Webseries")
+                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url="https://t.me/LuffyMovies"),
+                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙶𝚛𝚘𝚞𝚙", url="https://t.me/Request_Movies_Webseries")
                     ],
                     [
-                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐁𝐨𝐭", callback_data="aboutbot"),
-                        InlineKeyboardButton("𝐀𝐛𝐨𝐮𝐭 𝐃𝐞𝐯", callback_data="aboutdevs")
+                        InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙱𝚘𝚝", callback_data="aboutbot"),
+                        InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙳𝚎𝚟", callback_data="aboutdevs")
                     ]
                 ]
             )
@@ -425,27 +425,27 @@ async def button(bot: Client, cmd: CallbackQuery):
     elif cb_data.startswith("ban_user_"):
         user_id = cb_data.split("_", 2)[-1]
         if Config.UPDATES_CHANNEL is None:
-            await cmd.answer("Sorry Sir, You didn't Set any Updates Channel!", show_alert=True)
+            await cmd.answer("𝚂𝚘𝚛𝚛𝚢 𝚂𝚒𝚛, 𝚈𝚘𝚞 𝚍𝚒𝚍𝚗'𝚝 𝚂𝚎𝚝 𝚊𝚗𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕!", show_alert=True)
             return
         if not int(cmd.from_user.id) == Config.BOT_OWNER:
-            await cmd.answer("You are not allowed to do that!", show_alert=True)
+            await cmd.answer("𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚝 𝚊𝚕𝚕𝚘𝚠𝚎𝚍 𝚝𝚘 𝚍𝚘 𝚝𝚑𝚊𝚝!", show_alert=True)
             return
         try:
             await bot.kick_chat_member(chat_id=int(Config.UPDATES_CHANNEL), user_id=int(user_id))
-            await cmd.answer("User Banned from Updates Channel!", show_alert=True)
+            await cmd.answer("𝚄𝚜𝚎𝚛 𝙱𝚊𝚗𝚗𝚎𝚍 𝚏𝚛𝚘𝚖 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕!", show_alert=True)
         except Exception as e:
-            await cmd.answer(f"Can't Ban Him!\n\nError: {e}", show_alert=True)
+            await cmd.answer(f"𝙲𝚊𝚗'𝚝 𝙱𝚊𝚗 𝙷𝚒𝚖!\n\n𝙴𝚛𝚛𝚘𝚛: {e}", show_alert=True)
 
     elif "addToBatchTrue" in cb_data:
         if MediaList.get(f"{str(cmd.from_user.id)}", None) is None:
             MediaList[f"{str(cmd.from_user.id)}"] = []
         file_id = cmd.message.reply_to_message.id
         MediaList[f"{str(cmd.from_user.id)}"].append(file_id)
-        await cmd.message.edit("File Saved in Batch!\n\n"
-                               "Press below button to get batch link.",
+        await cmd.message.edit("𝙵𝚒𝚕𝚎 𝚂𝚊𝚟𝚎𝚍 𝚒𝚗 𝙱𝚊𝚝𝚌𝚑!\n\n"
+                               "𝙿𝚛𝚎𝚜𝚜 𝚋𝚎𝚕𝚘𝚠 👇 𝚋𝚞𝚝𝚝𝚘𝚗 𝚝𝚘 𝚐𝚎𝚝 𝚋𝚊𝚝𝚌𝚑 𝚕𝚒𝚗𝚔.",
                                reply_markup=InlineKeyboardMarkup([
-                                   [InlineKeyboardButton("Get Batch Link", callback_data="getBatchLink")],
-                                   [InlineKeyboardButton("Close Message", callback_data="closeMessage")]
+                                   [InlineKeyboardButton("𝙶𝚎𝚝 𝙱𝚊𝚝𝚌𝚑 𝙻𝚒𝚗𝚔", callback_data="getBatchLink")],
+                                   [InlineKeyboardButton("𝙲𝚕𝚘𝚜𝚎 𝙼𝚎𝚜𝚜𝚊𝚐𝚎", callback_data="closeMessage")]
                                ]))
 
     elif "addToBatchFalse" in cb_data:
@@ -454,9 +454,9 @@ async def button(bot: Client, cmd: CallbackQuery):
     elif "getBatchLink" in cb_data:
         message_ids = MediaList.get(f"{str(cmd.from_user.id)}", None)
         if message_ids is None:
-            await cmd.answer("Batch List Empty!", show_alert=True)
+            await cmd.answer("𝙱𝚊𝚝𝚌𝚑 𝙻𝚒𝚜𝚝 𝙴𝚖𝚙𝚝𝚢!", show_alert=True)
             return
-        await cmd.message.edit("Please wait, generating batch link ...")
+        await cmd.message.edit("𝙷𝚎𝚢 𝚍𝚎𝚊𝚛 𝚙𝚕𝚎𝚊𝚜𝚎 𝚠𝚊𝚒𝚝, 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚒𝚗𝚐 𝚋𝚊𝚝𝚌𝚑 𝚕𝚒𝚗𝚔 ...")
         await save_batch_media_in_channel(bot=bot, editable=cmd.message, message_ids=message_ids)
         MediaList[f"{str(cmd.from_user.id)}"] = []
 
