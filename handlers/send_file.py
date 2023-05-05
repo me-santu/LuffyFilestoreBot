@@ -11,7 +11,7 @@ from handlers.helpers import str_to_b64
 
 # UPDATES_CHANNEL_USERNAME = ("UPDATES_CHANNEL_USERNAME", "Movies_X_Animes")
 DELETE_TIME = int(environ.get('DELETE_TIME', 120))#1min=60s , 2min=60×2=120 , 5min=60×5=300 😎🤏
-AUTODELETE_MESSAGE = os.getenv("from os import environ", '''‼️ File will auto delete in few seconds😱 💡Forward it to saved massages or anywhere before downloading.😁 😇Join @Movies_X_Animes''')
+AUTODELETE_MESSAGE = os.getenv("from os import environ", '''‼️ File will auto delete in f"{DELETE_TIME}" seconds😱 💡Forward it to saved massages or anywhere before downloading.😁 😇Join @Movies_X_Animes''')
 
 async def reply_forward(message: Message, file_id: int):
     try:
@@ -39,6 +39,6 @@ async def media_forward(bot: Client, user_id: int, file_id: int):
 
 async def send_media_and_reply(bot: Client, user_id: int, file_id: int):
     sent_message = await media_forward(bot, user_id, file_id)
-    await sent_message.reply_text(f'{AUTODELETE_MESSAGE}')
-    await asyncio.sleep(DELETE_TIME)
+    await reply_forward(message=sent_message, file_id=file_id)
+    await asyncio.sleep(DELETE_TIME)  #1min=60s , 2min=60×2=120 , 5min=60×5=300 😎🤏
     await sent_message.delete()
