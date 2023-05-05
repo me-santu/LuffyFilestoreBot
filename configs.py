@@ -19,22 +19,21 @@ class Config(object):
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
-	ABOUT_BOT_TEXT = f"""This is a Permanent FileStore Bot.
-Send Me any Media or File. I can Work in Channel too Add Me to Channel with Edit Permission, I will add save Uploaded File in Channel and Share a Shareable Link.
-╭────[ ⚝FɪʟᴇSᴛᴏʀᴇBᴏᴛ⚝]────⍟
-├🔸🤖 **My Name:** [𝐋𝐮𝐟𝐟𝐲 𝐅𝐢𝐥𝐞𝐬𝐭𝐨𝐫𝐞 𝐁𝐨𝐭](https://t.me/{BOT_USERNAME})
+	ABOUT_BOT_TEXT = f"""𝚃𝚑𝚒𝚜 𝚒𝚜 𝚊 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝙵𝚒𝚕𝚎𝚂𝚝𝚘𝚛𝚎 𝙱𝚘𝚝, 𝙾𝚙𝚎𝚛𝚊𝚝𝚎𝚍 𝙱𝚢 𝙻𝚞𝚏𝚏𝚢 𝙼𝚘𝚟𝚒𝚎𝚜. 𝚂𝚎𝚗𝚍 𝙼𝚎 𝚊𝚗𝚢 𝙼𝚎𝚍𝚒𝚊 𝚘𝚛 𝙵𝚒𝚕𝚎. 𝙸 𝚠𝚒𝚕𝚕 𝚊𝚍𝚍 𝚜𝚊𝚟𝚎 𝚄𝚙𝚕𝚘𝚊𝚍𝚎𝚍 𝙵𝚒𝚕𝚎 𝚒𝚗 𝚖𝚢 𝙳𝚊𝚝𝚊𝚋𝚊𝚜𝚎 𝚊𝚗𝚍 𝚂𝚑𝚊𝚛𝚎 𝚊 𝚂𝚑𝚊𝚛𝚎𝚊𝚋𝚕𝚎 𝙻𝚒𝚗𝚔.\n
+╭────[ ⚝ 𝙻𝚞𝚏𝚏𝚢 𝙵𝚒𝚕𝚎𝚜𝚝𝚘𝚛𝚎 𝙱𝚘𝚝 ⚝]────⍟
+├🔸🤖 **𝙼𝚢 𝙽𝚊𝚖𝚎:** [𝐋𝐮𝐟𝐟𝐲 𝐅𝐢𝐥𝐞𝐬𝐭𝐨𝐫𝐞 𝐁𝐨𝐭](https://t.me/{BOT_USERNAME})
 │
-├🔸📝 **Language:** [𝐏𝐲𝐭𝐡𝐨𝐧𝟑](https://www.python.org)
+├🔸📝 **𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎:** [𝐏𝐲𝐭𝐡𝐨𝐧𝟑](https://www.python.org)
 │
-├🔹📚 **Library:** [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦](https://docs.pyrogram.org)
+├🔹📚 **𝙻𝚒𝚋𝚛𝚊𝚛𝚢:** [𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦](https://docs.pyrogram.org)
 │
-├🔹📡 **Hosted On:** [𝐇𝐞𝐫𝐨𝐤𝐮](https://heroku.com)
+├🔹📡 **𝙷𝚘𝚜𝚝𝚎𝚍 𝙾𝚗:** [𝐇𝐞𝐫𝐨𝐤𝐮](https://heroku.com)
 │
-├🔸👨‍💻 **Developer:** **[༺Ujjωαℓ༻](tg://user?id=2051226979)** 
+├🔸👨‍💻 **𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛:** **[༺Ujjωαℓ༻](tg://user?id=1716234631)** 
 │
-├🔹👥 **Support:**  [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](tg://user?id=1716234631)
+├🔹👥 **𝚂𝚞𝚙𝚙𝚘𝚛𝚝:**  [𝐒𝐮𝐩𝐩𝐨𝐫𝐭](tg://user?id=1716234631)
 │
-├🔸🔔 **Updates:** [𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/LuffyMovies)
+├🔸🔔 **𝚄𝚙𝚍𝚊𝚝𝚎𝚜:** [𝐔𝐩𝐝𝐚𝐭𝐞𝐬](https://t.me/LuffyMovies)
 │
 ╰────[ **😇 @LuffyMovies 😇**]────⍟"""
 	ABOUT_DEV_TEXT = f"""
