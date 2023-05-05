@@ -32,7 +32,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="Sorry Sir, You are Banned to use me. Contact here [Support](https://t.me/mrpremium_bot).",
+                text="𝚂𝚘𝚛𝚛𝚢 𝚂𝚒𝚛, 𝚈𝚘𝚞 𝚊𝚛𝚎 𝚋𝚊𝚗𝚗𝚎𝚍 𝚝𝚘 𝚞𝚜𝚎 𝚖𝚎. 𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙷𝚎𝚛𝚎 👉 [𝚂𝚞𝚙𝚙𝚘𝚛𝚝](https://t.me/mrpremium_bot).",
                 disable_web_page_preview=True
             )
             return 400
@@ -44,15 +44,15 @@ async def handle_force_sub(bot: Client, cmd: Message):
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**\n\n"
-                 "Due to Overload, Only Channel Subscribers can use this Bot!",
+            text="**𝙿𝚕𝚎𝚊𝚜𝚎 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝚝𝚘 𝚞𝚜𝚎 𝚝𝚑𝚒𝚜 𝙱𝚘𝚝!**\n\n"
+                 "𝙳𝚞𝚎 𝚝𝚘 𝙾𝚟𝚎𝚛𝚕𝚘𝚊𝚍, 𝙾𝚗𝚕𝚢 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎𝚛𝚜 𝚌𝚊𝚗 𝚞𝚜𝚎 𝚝𝚑𝚒𝚜 𝙱𝚘𝚝!😎",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("😇 𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 😇", url=invite_link.invite_link)
+                        InlineKeyboardButton("😇 𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 😇", url=invite_link.invite_link)
                     ],
                     [
-                        InlineKeyboardButton("🔄 𝐑𝐞𝐟𝐫𝐞𝐬𝐡 🔄", callback_data="refreshForceSub")
+                        InlineKeyboardButton("🔄 𝚁𝚎𝚏𝚛𝚎𝚜𝚑 🔄", callback_data="refreshForceSub")
                     ]
                 ]
             )
@@ -61,7 +61,7 @@ async def handle_force_sub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Something went Wrong. Contact here [Support](https://t.me/mrpremium_bot).",
+            text="𝚂𝚘𝚖𝚎𝚝𝚑𝚒𝚗𝚐 𝚠𝚎𝚗𝚝 𝚆𝚛𝚘𝚗𝚐. 𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙷𝚎𝚛𝚎 👉 [𝚂𝚞𝚙𝚙𝚘𝚛𝚝](https://t.me/mrpremium_bot).",
             disable_web_page_preview=True
         )
         return 200
