@@ -74,7 +74,7 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🍷 𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🍷", url="https://t.me/LuffyMovies")
+                        InlineKeyboardButton("🍷 𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🍷", url=" ")
                     ],
                     [
                         InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 𝙱𝚘𝚝", callback_data="aboutbot"),
@@ -82,8 +82,8 @@ async def start(bot: Client, cmd: Message):
                         InlineKeyboardButton("𝙲𝚕𝚘𝚜𝚎 🚪", callback_data="closeMessage")
                     ],
                     [
-                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url="https://t.me/LuffyMovies"),
-                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙶𝚛𝚘𝚞𝚙", url="https://t.me/Request_Movies_Webseries")
+                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url=" "),
+                        InlineKeyboardButton("𝙼𝚘𝚟𝚒𝚎𝚜 𝙶𝚛𝚘𝚞𝚙", url=" ")
                     ]
                 ]
             )
